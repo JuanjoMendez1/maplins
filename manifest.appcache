@@ -1,0 +1,12 @@
+CACHE MANIFEST
+#DATE 31/01/20
+
+CACHE:
+css/style.css
+css/estilos.css
+
+NETWORK:
+*
+
+FALLBACK:
+#static.html
