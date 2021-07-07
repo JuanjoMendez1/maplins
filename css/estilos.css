@@ -15,6 +15,7 @@ body {
     line-height: 2;
 }
 
+
 /* Globales */
 
 .contenedor {
@@ -56,6 +57,7 @@ img {
     width: 90%;
 }
 
+
 /** Grid **/
 
 @media (min-width: 768px) {
@@ -64,35 +66,29 @@ img {
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
     .centrar-columnas {
         justify-content: center;
     }
-
     .centrar-filas {
         align-self: center;
     }
-
     .columnas-4 {
         flex: 0 0 calc(33.3% - 1rem);
     }
-
     .columnas-6 {
         flex: 0 0 calc(50% - 1rem);
     }
-
     .columnas-8 {
         flex: 0 0 calc(66.6% - 1rem);
     }
-
     .columnas-10 {
         flex: 0 0 calc(83.3% - 1rem);
     }
-
     .columnas-12 {
         flex: 0 0 100%;
     }
 }
+
 
 /* Opcional */
 
@@ -127,6 +123,7 @@ img {
     }
 }
 
+
 /** Navegacion **/
 
 .navegacion a {
@@ -143,12 +140,10 @@ img {
         /** = 18px **/
         margin-right: 2rem;
     }
-
     .navegacion a:last-of-type {
         margin: 0;
     }
 }
-
 
 
 /** Mobile Menu **/
@@ -177,7 +172,10 @@ img {
     }
 }
 
+
 /* Navbar */
+
+
 /* .navbar-prin {
     margin: 0.8rem auto;
 }
@@ -193,6 +191,7 @@ img {
     font-family: sans-serif;
 }
 */
+
 
 /* Encabezado */
 
@@ -222,11 +221,13 @@ img {
     max-height: 50%;
 }
 
+
 /* @media (min-width: 768px) {
     .logo {
         max-width: 0%;
     }
 } */
+
 
 /* Carousel */
 
@@ -247,6 +248,7 @@ img {
 .separacion {
     padding: 3rem;
 }
+
 
 /* Footer */
 
@@ -296,6 +298,7 @@ img {
     }
 }
 
+
 /* line */
 
 .line {
@@ -329,9 +332,11 @@ img {
     }
 }
 
+
 /* Maple */
+
 .maple {
-    background-image: url(../img/food_truckn3.jpeg);
+    background-image: url(../img/backgroundMovil.png);
     position: relative;
     display: flex;
     justify-content: center;
@@ -345,7 +350,7 @@ img {
 
 @media (min-width: 768px) {
     .maple {
-        background-image: url(../img/hero-maplins.jpg);
+        background-image: url(../img/backgroundPrincipal.png)!important;
         position: relative;
         display: flex;
         justify-content: center;
@@ -449,6 +454,7 @@ img {
     text-align: center;
 }
 
+
 /* Formulario */
 
 .formulario {
@@ -465,6 +471,7 @@ label {
     transform: scale(1.4);
     color: #fff;
 }
+
 
 /* Contacto */
 
@@ -519,6 +526,7 @@ textarea {
     align-items: center;
     overflow-x: hidden;
 }
+
 .fondo-informacion-dos {
     background-image: url(../img/spikes2.png);
     position: relative;
@@ -536,44 +544,80 @@ textarea {
     filter: invert(100%);
 }
 
+
 /* Nosotros */
-.nosotros p.nosotros-nosotros{
+
+.nosotros p.nosotros-nosotros {
     margin-bottom: 3em;
 }
-.nosotros p span{
+
+.nosotros p span {
     font-weight: bold;
 }
 
-.nosotros img{
+.nosotros img {
     max-width: 50%;
 }
 
+
 /* Linea Navbar */
 
-.line-nav a{
+.line-nav a {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
 
-.line-nav a:hover{
+.line-nav a:hover {
     color: #ffffff;
 }
 
-.for-contacto h3 a{
-        text-decoration: none;
+.for-contacto h3 a {
+    text-decoration: none;
 }
 
-.nav-nav{
+.nav-nav {
     background-color: #00BE4C;
 }
-.nav-nav a{
+
+.nav-nav a {
     color: black;
 }
-.nav-nav a:hover{
+
+.nav-nav a:hover {
     color: #ffffff;
 }
 
-.navbar-nav{
+.navbar-nav {
     text-align: center;
+}
+
+
+/* Pagos */
+
+.pagos {
+    color: #ffffff;
+    text-align: center;
+    margin-top: .5em;
+    font-size: 1.2em;
+}
+
+.pagos-clip {
+    color: #FC4304;
+    font-size: 1em;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .pagos {
+        color: #ffffff;
+        text-align: center;
+        margin-top: .5em;
+        font-size: 1.6em;
+    }
+    .pagos-clip {
+        color: #FC4304;
+        font-size: 1.4em;
+        text-align: center;
+    }
 }
