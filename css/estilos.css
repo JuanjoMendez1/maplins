@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /*Convierte 1 rem a 10px*/
@@ -78,6 +79,7 @@ img {
   display: inline-block;
   padding: 1rem 6rem;
 }
+
 .btn:hover {
   background-color: #fff;
   border: 1px solid #1ed760;
@@ -101,12 +103,14 @@ img {
   display: inline-block;
   padding: 1rem 6rem;
 }
+
 .btn-contacto:hover {
   background-color: #1ed760;
   border: 1px solid #fff;
   color: #fff;
   cursor: pointer;
 }
+
 .padd {
   padding: 2rem 0;
 }
@@ -129,6 +133,7 @@ img {
   background-size: cover;
   height: 60rem;
 }
+
 .hero:after {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
@@ -138,10 +143,12 @@ img {
   right: 0;
   bottom: 0;
 }
+
 .logo {
   margin-top: 1rem;
   max-width: 50%;
 }
+
 .titulo {
   color: #fff;
   position: relative;
@@ -192,6 +199,7 @@ img {
 .sectionContacto {
   color: #fff;
 }
+
 .informacion span {
   font-weight: bold;
 }
@@ -206,6 +214,7 @@ img {
 .informacion h3 {
   text-align: center;
 }
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -273,14 +282,15 @@ textarea {
   text-align: center;
 }
 
-.pagos-clip img{
-  max-width:3rem;
+.pagos-clip img {
+  max-width: 3rem;
 }
 
 /* Footer */
 footer {
   background-color: #1ed760;
 }
+
 .grid-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -291,19 +301,24 @@ footer {
   color: #fff;
   padding: 1rem 0;
 }
+
 .imgFooter {
   max-width: 50%;
 }
+
 .social {
   display: flex;
   text-align: center;
 }
+
 .social-social {
   color: #fff;
 }
+
 .social-social i {
-  font-size: 2rem;
+  font-size: 3rem;
 }
+
 .social-social p {
   margin: 0;
 }
@@ -338,12 +353,15 @@ footer {
   .sectionInformacion {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .sectionInformacion div:nth-child(2) {
     grid-row: 1/2;
   }
+
   .sectionInvertir .sectionInformacion div:nth-child(1) {
     grid-row: 1;
   }
+
   .sectionInvertir .sectionInformacion div:nth-child(2) {
     grid-row: 2;
   }
@@ -361,6 +379,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   input[type="text"],
   input[type="tel"],
   input[type="email"] {
