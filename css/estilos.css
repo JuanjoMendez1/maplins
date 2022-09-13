@@ -111,6 +111,12 @@ img {
   cursor: pointer;
 }
 
+.btns_galeria{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .padd {
   padding: 2rem 0;
 }
@@ -122,7 +128,7 @@ img {
 
 /* Seccion Principal */
 .hero {
-  background-image: url(../img/background.png);
+  background-image: url(../img/Fondo.png);
   position: relative;
   display: flex;
   justify-content: center;
@@ -173,10 +179,6 @@ img {
 }
 
 .sectionInformacion {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -338,7 +340,7 @@ footer {
 /* Movile */
 @media (max-width: 768px) {
   .hero {
-    background-image: url(../img/backgroundMovil.png);
+    background-image: url(../img/fondo_movil.jpg);
     position: relative;
     display: flex;
     justify-content: center;
@@ -373,6 +375,9 @@ footer {
 
   .btn {
     display: block;
+  }
+  .btns_galeria{
+    flex-direction: column;
   }
 
   form .prueba {
