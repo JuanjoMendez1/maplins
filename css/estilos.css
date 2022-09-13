@@ -128,7 +128,7 @@ img {
 
 /* Seccion Principal */
 .hero {
-  background-image: url(../img/Fondo.png);
+  background-image: url(../img/fondo_movil.jpg);
   position: relative;
   display: flex;
   justify-content: center;
