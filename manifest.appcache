@@ -1,0 +1,13 @@
+CACHE MANIFEST
+#DATE 31/01/20
+
+CACHE:
+css/estilos.css
+img
+fonts/coolvetica
+
+NETWORK:
+*
+
+FALLBACK:
+#static.html
