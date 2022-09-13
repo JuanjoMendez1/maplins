@@ -128,7 +128,7 @@ img {
 
 /* Seccion Principal */
 .hero {
-  background-image: url(../img/fondo_movil.jpg);
+  background-image: url(../img/fondo.jpg);
   position: relative;
   display: flex;
   justify-content: center;
@@ -340,7 +340,7 @@ footer {
 /* Movile */
 @media (max-width: 768px) {
   .hero {
-    background-image: url(../img/fondo_movil.jpg);
+    background-image: url(../img/fondo_movil.jpeg);
     position: relative;
     display: flex;
     justify-content: center;
@@ -349,7 +349,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 60rem;
+    height: 100%;
   }
 
   .sectionInformacion {
