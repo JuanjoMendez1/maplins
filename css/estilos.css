@@ -184,9 +184,22 @@ img {
   justify-items: center;
   align-items: center;
 }
+/* Descomentar cuando ya tenga la imagen */
+/* .sectionInformacion.sectionComprar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+} */
 
 .sectionInformacion .icono {
-  max-width: 18rem;
+  max-width: 18rem; 
+}
+.icono h4{
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.6rem;
 }
 
 /* Nosotros */
@@ -352,7 +365,33 @@ footer {
     height: 60rem;
   }
 
+  .sectionNosotros{
+    background-image: url(../img/food_truck_ni.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* height: 60rem; */
+  }
+  .sectionNosotros::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   .sectionInformacion {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sectionInformacion.sectionComprar {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -370,8 +409,20 @@ footer {
 
   .galeria {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+            "one"
+            "fourth"
+            "two"
+            "five"
+            "three"
+            "six";
   }
+  .galeria .one { grid-area: one; }
+.galeria .two { grid-area: two; }
+.galeria .fourth { grid-area: fourth; }
+.galeria .five { grid-area: five; }
+.galeria .three { grid-area: three; }
+.galeria .six { grid-area: six; }
 
   .btn {
     display: block;
