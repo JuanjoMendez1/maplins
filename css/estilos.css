@@ -185,12 +185,12 @@ img {
   align-items: center;
 }
 /* Descomentar cuando ya tenga la imagen */
-/* .sectionInformacion.sectionComprar {
+.sectionInformacion.sectionComprar {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   justify-items: center;
   align-items: center;
-} */
+}
 
 .sectionInformacion .icono {
   max-width: 18rem; 
