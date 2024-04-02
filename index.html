@@ -11,17 +11,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Maplins</title>
-    <!-- Global site tag (gtag.js) - Google Ads: 461391455 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-461391455"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6YM6WKG5E"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-461391455');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-D6YM6WKG5E');
     </script>
     <!-- Event snippet for Página vista conversion page -->
     <script>
@@ -172,7 +169,7 @@
                         <h3>!Contactanos¡</h3>
                         <h4>Solicita tu cotización o <a href="tel:5516772700">llamanos: (55) 1677 2700</a></h4>
                     </div>
-                    <form action="formulario.php" method="post">
+                    <form action="#">
                         <div class="prueba">
                             <div class="inputForm">
                                 <label for="nombre">Nombre (s)</label>
@@ -198,7 +195,7 @@
                             <label for="mensaje">Mensaje</label>
                             <textarea name="mensaje" id="mensaje" rows="10"></textarea>
                         </div>
-                        <input class="btn-contacto" type="submit" value="Enviar">
+                        <input class="btn-contacto" type="submit" id="btn_enviar" value="Enviar">
                     </form>
                 </div>
             </div>
@@ -253,6 +250,7 @@
         </div>
     </footer>
 
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
