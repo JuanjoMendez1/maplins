@@ -5,8 +5,8 @@ $email = $_POST['email'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje']; 
 
-    $email_to = "juanjomendez029@gmail.com";
-    // $email_to_maplins ="ventas@maplins.com.mx";
+    $email_to = "sabino_andaluz@hotmail.com";
+    $email_to_maplins ="ventas@maplins.com.mx";
     $asunto = "Solicitud de Informacion Maplins";
     $asunto_cliente="Gracias por enviar su informacion" ;
 
@@ -30,12 +30,12 @@ $mensaje = $_POST['mensaje'];
 'Reply-To: '.$email_to."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 
-if (mail($email_to, $asunto, $comentario, $headers)) {
-    echo "Correo enviado";
-} else {
-    echo "Error";
-}
+        if (mail($email_to, $asunto, $comentario, $headers)) {
+            mail($email_to_maplins,$asunto,$comentario,$headers);
+            echo "Correo enviado";
+        } else {
+            echo "Error";
+        }
         // mail($email_to,$asunto,$comentario,$headers);
-        // mail($email_to_maplins,$asunto,$comentario,$headers);
         // include 'index.html';
 ?>
