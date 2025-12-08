@@ -184,6 +184,30 @@ img {
   justify-items: center;
   align-items: center;
 }
+
+.sectionInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.sectionInformacions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionInformacions.sectionComprarN{
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+}
+.sectionInformacions .icono {
+  max-width: 14rem; 
+}
+.sectionInfo .sectionInformacions:nth-child(1){
+    grid-row: 1/2;
+  }
 /* Descomentar cuando ya tenga la imagen */
 .sectionInformacion.sectionComprar {
   display: grid;
@@ -205,13 +229,15 @@ img {
 /* Nosotros */
 .sectionNosotros,
 .sectionComprar,
-.sectionContacto {
+.sectionContacto,
+.sectionInfos {
   background-color: #1ed760;
 }
 
 .sectionNosotros,
 .sectionComprar,
-.sectionContacto {
+.sectionContacto,
+.sectionInfos {
   color: #fff;
 }
 
@@ -400,8 +426,19 @@ footer {
     bottom: 0;
   }
 
-  .sectionInformacion {
+  .sectionInformacion,.sectionInfo  {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sectionInfo .sectionInformacions:nth-child(1){
+    grid-row: 2/3;
+  }
+
+  .sectionInformacions{
+    flex-direction: row;
+  }
+  .sectionInformacions .informacion{
+    max-width: 70%;
   }
 
   .sectionInformacion.sectionComprar {
