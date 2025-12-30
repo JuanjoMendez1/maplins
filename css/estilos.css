@@ -6,8 +6,8 @@ html {
 }
 
 @font-face {
-  font-family: 'Coolvetica';
-  src: url(../fonts/coolvetica/coolvetica\ rg.ttf);
+  font-family: 'MiFuente';
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf);
 }
 
 *,
@@ -61,6 +61,11 @@ a {
 img {
   max-width: 100%;
   /* display: block; */
+}
+
+.titulo_fuente{
+  font-family: "MiFuente"!important;
+  line-height: 1.4;
 }
 
 .btn {
@@ -245,6 +250,10 @@ img {
   font-weight: bold;
 }
 
+.informacion h3{
+  font-family: 'Source Sans Pro Black';
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf);
+}
 /* Invertir */
 
 .sectionInvertir .informacion {
