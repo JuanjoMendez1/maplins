@@ -327,13 +327,16 @@ textarea {
   max-width: 80%;
 }
 
-.tarjetas .pagos-clip {
-  color: #FC4304;
-  text-align: center;
+.tarjetas{
+  display: flex;
+  align-items: center;
 }
 
-.pagos-clip img {
-  max-width: 3rem;
+.tarjetas img{
+  max-height: 8rem;
+}
+.tarjetas p{
+  text-align: left;
 }
 
 /* Footer */
