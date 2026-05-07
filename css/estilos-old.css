@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*Convierte 1 rem a 10px*/
+}
+
+@font-face {
+  font-family: 'MiFuente';
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* ====== GLOBALES ====== */
+h1,
+h2,
+h3 {
+  font-family: Coolvetica;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.titulo_fuente {
+  font-family: "MiFuente" !important;
+  line-height: 1.4;
+}
+
+/* ====== BOTONES ====== */
+.btn {
+  background-color: #1ed760;
+  margin: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: background-color 0.3s ease-out;
+  text-align: center;
+  border: 1px solid #1ed760;
+  border-radius: 16px;
+  display: inline-block;
+  padding: 1rem 6rem;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border: 1px solid #1ed760;
+  color: #1ed760;
+  cursor: pointer;
+}
+
+.btn-contacto {
+  background-color: #fff;
+  margin: 2rem 0;
+  color: #1ed760;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: background-color 0.3s ease-out;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  display: inline-block;
+  padding: 1rem 6rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-contacto:hover {
+  background-color: #1ed760;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btns_galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.padd {
+  padding: 2rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ====== MENU ====== */
+.bg-green {
+  background-color: #1ed760;
+}
+
+.logo {
+  max-width: 50%;
+  margin-top: 1rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enlaces a {
+  color: #fff;
+}
+
+.enlaces a:nth-child(1) {
+  margin-right: 2rem;
+}
+
+/* ====== SECCIÓN PRINCIPAL (HERO) ====== */
+.hero {
+  background-image: url(../img/fondo.webp);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 77rem;
+}
+
+.hero:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.titulo {
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.titulo h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.titulo p {
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* ====== SECCIONES ====== */
+.sectionNosotros,
+.sectionComprar,
+.sectionContacto,
+.sectionInfos {
+  background-color: #1ed760;
+  color: #fff;
+}
+
+.sectionNosotros {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 50rem;
+}
+
+/* ====== INFORMACIÓN ====== */
+.sectionInformacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.sectionInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.sectionInformacions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionInformacions.sectionComprarN {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.sectionInformacions .icono {
+  max-width: 14rem;
+}
+
+.sectionInfo .sectionInformacions:nth-child(1) {
+  grid-row: 1/2;
+}
+
+.sectionInformacion.sectionComprar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.sectionInformacion .icono {
+  max-width: 18rem;
+}
+
+.icono h4 {
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.informacion span {
+  font-weight: bold;
+}
+
+.informacion h3 {
+  text-align: center;
+  font-family: Coolvetica;
+}
+
+.sectionInvertir .informacion {
+  color: #000000;
+}
+
+/* ====== GALERÍA ====== */
+.sectionGaleria {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+/* ====== FORMULARIO ====== */
+.informacion h4 {
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+form .prueba {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+form .inputForm {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  height: 4rem;
+  border-radius: 8px;
+  border: 1px solid #1ed760;
+  outline: none;
+  width: 90%;
+}
+
+textarea {
+  border-radius: 8px;
+  border: 1px solid #1ed760;
+  outline: none;
+  width: 95%;
+}
+
+/* ====== PAGOS ====== */
+.sectionPagos {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.sectionPagos .registro img {
+  max-width: 80%;
+}
+
+.tarjetas {
+  display: flex;
+  align-items: center;
+}
+
+.tarjetas img {
+  max-height: 8rem;
+}
+
+.tarjetas p {
+  text-align: left;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #1ed760;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.imgFooter {
+  max-width: 50%;
+}
+
+.social {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.social-social {
+  color: #fff;
+}
+
+.social-social i {
+  font-size: 3rem;
+}
+
+.social-social p {
+  margin: 0;
+}
+
+.footer-social {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .hero {
+    background-image: url(../img/fondo_movil.jpeg);
+    height: 60rem;
+  }
+
+  .sectionNosotros {
+    background-image: url(../img/food_truck_ni.webp);
+  }
+
+  .sectionNosotros::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .sectionInformacion,
+  .sectionInfo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sectionInfo .sectionInformacions:nth-child(1) {
+    grid-row: 2/3;
+  }
+
+  .sectionInformacions {
+    flex-direction: row;
+  }
+
+  .sectionInformacions .informacion {
+    max-width: 70%;
+  }
+
+  .sectionInformacion.sectionComprar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sectionInformacion div:nth-child(2) {
+    grid-row: 1/2;
+  }
+
+  .sectionInvertir .sectionInformacion div:nth-child(1) {
+    grid-row: 1;
+  }
+
+  .sectionInvertir .sectionInformacion div:nth-child(2) {
+    grid-row: 2;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .btns_galeria {
+    flex-direction: column;
+  }
+
+  form .prueba {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+
+  .btn-contacto {
+    width: 100%;
+  }
+
+  .sectionPagos {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjetas {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid-footer {
+    padding: 2rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 564px) {
+  .logo {
+    max-width: 40%;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

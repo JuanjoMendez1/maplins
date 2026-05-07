@@ -5,35 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/Logo/favicon-logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/Logo/favicon-logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/galeria.css">
-    <title>Galeria</title>
-    <!-- Google tag (gtag.js) -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Galería - Maplins Food Trucks</title>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6YM6WKG5E"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-D6YM6WKG5E');
-    </script>
-    <!-- Event snippet for Página vista conversion page -->
-    <script>
-        gtag('event', 'conversion', {
-            'send_to': 'AW-461391455/MbRpCOvSh-0BEN-MgdwB'
-        });
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-235268245-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-235268245-1');
     </script>
 
     <!-- Microsoft Clarity -->
@@ -47,78 +32,146 @@
 </head>
 
 <body>
-
-    <div class="bg-green">
-        <nav class="contenedor menu">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/Logo/logo_negro.png" alt="Logo de Maplins">
-                </a>
-            </div>
-            <div class="enlaces" style="font-weight: bold;">
-                <a href="index.html">Inicio</a>
-                <a href="index.html#contacto">Contacto</a>
-            </div>
-        </nav>
-    </div>
-    <main>
-        <div class="contenedor sectionGaleria">
-            <h2 class="titulo_fuente">Galeria</h2>
-            <div class="galeria">
-                <img src="img/foodtruck/foodtruck_i.jpg" alt="">
-                <img src="img/foodtruck/foodtruck_c.jpg" alt="">
-                <img src="img/foodtruck/foodtruck_d.jpg" alt="">
-                <img src="img/foodtruck/foodtruck1.jpg" alt="">
-                <img src="img/foodtruck/foodtruck2.jpg" alt="">
-                <img src="img/foodtruck/new1.jpg" alt="">
-                <img src="img/foodtruck/new2.jpg" alt="">
-                <img src="img/foodtruck/new3.jpg" alt="">
-                <img src="img/foodtruck/new4.jpg" alt="">
-                <img src="img/food_truck_ni.jpg" alt="">
-                <img src="img/food_truck_nc.jpg" alt="">
-                <img src="img/food_truck_nd.jpg" alt="">
-                <img src="img/Clientes/clientes11.png" alt="">
-                <img src="img/Clientes/clientes3.png" alt="">
-                <img src="img/Clientes/cliente3.jpeg" alt="">
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar">
+        <div class="contenedor">
+            <div class="navbar-content">
+                <div class="navbar-logo">
+                    <a href="index.html">
+                        <img src="img/Logo/logo_principal.webp" alt="Maplins Logo">
+                    </a>
+                </div>
+                <div class="navbar-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="index.html#servicios">Servicios</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="index.html#contacto">Contacto</a>
+                </div>
             </div>
         </div>
-    </main>
+    </nav>
 
-    <footer>
-        <div class="grid-footer contenedor">
-            <div class="imgFooter">
-                <a href="/">
-                    <img src="img/Logo/logo_negro.png" alt="">
-                </a>
+    <!-- ====== GALERÍA COMPLETA ====== -->
+    <section class="section-gallery" style="padding-top: 120px;">
+        <div class="contenedor">
+            <h2>Galería Completa</h2>
+            <p class="gallery-subtitle">Explora nuestro completo catálogo de food trucks. Cada proyecto refleja nuestro compromiso con la calidad y la innovación.</p>
+            
+            <div class="gallery-grid" style="grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/foodtruck_i.webp" alt="Food Truck Vintage">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/foodtruck/foodtruck_c.webp" alt="Food Truck Clásico">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/foodtruck/foodtruck_d.webp" alt="Food Truck Diseño">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/foodtruck/foodtruck1.webp" alt="Food Truck 1">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/foodtruck/foodtruck2.webp" alt="Food Truck 2">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/foodtruck/new1.webp" alt="Food Truck Nuevo 1">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/foodtruck/new2.webp" alt="Food Truck Nuevo 2">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/foodtruck/new3.webp" alt="Food Truck Nuevo 3">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/foodtruck/new4.webp" alt="Food Truck Nuevo 4">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/food_truck_ni.webp" alt="Food Truck Innovador">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/food_truck_nc.webp" alt="Food Truck Contemporáneo">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/food_truck_nd.webp" alt="Food Truck Dinámico">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/Clientes/clientes11.webp" alt="Cliente 11">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/Clientes/clientes3.webp" alt="Cliente 3">
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="img/Clientes/cliente3.jpeg" alt="Cliente 3 JPEG">
+                </div>
             </div>
-            <div class="footer-social">
-                <div class="social">
-                    <div class="social-media">
-                        <a href="tel:5516772700" class="social-social">
+
+            <div class="gallery-cta text-center" style="margin-top: 4rem;">
+                <a href="index.html#contacto" class="btn btn-large">Solicitar Presupuesto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="contenedor">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="img/Logo/logo_negro.webp" alt="Maplins">
+                    </div>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem;">Fabricamos soluciones innovadoras en food trucks. Calidad, diseño y profesionalismo en cada proyecto.</p>
+                    <div class="social-links">
+                        <a href="tel:5516772700" title="Teléfono">
                             <i class="fas fa-phone-alt"></i>
-                            <p>Teléfono</p>
                         </a>
-                    </div>
-                    <div class="social-media">
-                        <a href="https://wa.link/sx556x" class="social-social">
+                        <a href="https://wa.link/sx556x" title="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
-                            <p>WhatsApp</p>
                         </a>
-                    </div>
-                    <div class="social-media">
-                        <a href="https://www.facebook.com/maplins.com.mx" target="_blank" class="social-social">
+                        <a href="https://www.facebook.com/maplins.com.mx" target="_blank" title="Facebook">
                             <i class="fab fa-facebook"></i>
-                            <p>Facebook</p>
                         </a>
                     </div>
                 </div>
+
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="index.html#servicios">Diseño de Food Trucks</a></li>
+                        <li><a href="index.html#servicios">Fabricación Premium</a></li>
+                        <li><a href="index.html#servicios">Personalización</a></li>
+                        <li><a href="index.html#servicios">Consultoría</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="tel:5516772700">Teléfono: (55) 1677 2700</a></li>
+                        <li><a href="https://wa.link/sx556x">WhatsApp Directo</a></li>
+                        <li><a href="mailto:ventas@maplins.com.mx">Email: ventas@maplins.com.mx</a></li>
+                        <li><a href="https://www.facebook.com/maplins.com.mx" target="_blank">Síguenos en Facebook</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <p>Derechos Reservados 2022 &copy; | Maplins</p>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 <strong>Maplins</strong> - Todos los derechos reservados | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
             </div>
         </div>
     </footer>
 
+    <!-- ====== SCRIPTS ====== -->
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
