@@ -312,6 +312,24 @@ textarea {
   width: 95%;
 }
 
+.campo-trampa {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.estado-formulario {
+  min-height: 3.2rem;
+  margin: 0 0 1rem;
+  font-weight: bold;
+}
+
+.estado-formulario.error {
+  color: #7a0019;
+}
+
 /* Seccion de pagos */
 .sectionPagos {
   text-align: center;

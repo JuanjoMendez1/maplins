@@ -1,36 +1,60 @@
-const nombre = document.querySelector("#nombre");
-const apellido = document.querySelector("#apellido");
-const email = document.querySelector("#email");
-const telefono = document.querySelector("#telefono");
-const mensaje = document.querySelector("#mensaje");
-const btn_enviar = document.querySelector("#btn_enviar");
+const formulario = document.querySelector("#formulario-contacto");
+const botonEnviar = document.querySelector("#btn_enviar");
+const estadoFormulario = document.querySelector("#estado-formulario");
+const anioActual = document.querySelector("#anio-actual");
 
-
-const enviar_email = async (e) => {
-    try {
-        e.preventDefault();
-        if(nombre.value == "" || email.value == "" || telefono.value == "" || mensaje.value == "") {
-            alert("Por favor, completa todos los campos del formulario para que podamos ponernos en contacto contigo posteriormente. Tu información es crucial para brindarte el mejor servicio posible.");
-            return;
-        }
-        const data = new FormData();
-        data.append("nombre", apellido.value == "" ? nombre.value : `${nombre.value} ${apellido.value}`);
-        data.append("telefono", telefono.value);
-        data.append("email", email.value);
-        data.append("mensaje", mensaje.value);
-        const response = await fetch(`/formulario.php`, {
-            method: 'POST',
-            body: data
-        });
-        const resultado = await response.text();
-        console.log(resultado);
-        if (resultado == "Correo enviado") {
-            alert("¡Gracias por elegirnos para tu proyecto! Hemos recibido tu formulario y nos pondremos en contacto contigo pronto para explorar juntos las emocionantes posibilidades que tu idea presenta. ¡Estamos ansiosos por comenzar esta colaboración!")
-            window.location.reload();
-        }
-    } catch (error) {
-        console.log(error);
-    }
+if (anioActual) {
+    anioActual.textContent = new Date().getFullYear();
 }
 
-btn_enviar.addEventListener("click", enviar_email);
+const mostrarEstado = (mensaje, esError = false) => {
+    estadoFormulario.textContent = mensaje;
+    estadoFormulario.classList.toggle("error", esError);
+};
+
+const enviarFormulario = async (evento) => {
+    evento.preventDefault();
+
+    if (!formulario.reportValidity()) {
+        return;
+    }
+
+    if (window.location.protocol === "file:") {
+        mostrarEstado("El formulario solo puede enviarse desde el sitio publicado o desde un servidor local con PHP.", true);
+        return;
+    }
+
+    botonEnviar.disabled = true;
+    botonEnviar.value = "Enviando...";
+    mostrarEstado("Enviando tu solicitud...");
+
+    try {
+        const response = await fetch(formulario.action, {
+            method: 'POST',
+            body: new FormData(formulario),
+            headers: { "Accept": "application/json" }
+        });
+
+        const resultado = await response.json();
+        if (!response.ok || !resultado.ok) {
+            throw new Error(resultado.mensaje || "No pudimos enviar tu solicitud.");
+        }
+
+        mostrarEstado(resultado.mensaje);
+        formulario.reset();
+
+        if (typeof window.gtag === "function") {
+            window.gtag('event', 'conversion', {
+                'send_to': 'AW-461391455/MbRpCOvSh-0BEN-MgdwB'
+            });
+        }
+    } catch (error) {
+        console.error("No fue posible enviar el formulario:", error);
+        mostrarEstado("No pudimos enviar tu solicitud. Inténtalo nuevamente o llámanos al (55) 1677 2700.", true);
+    } finally {
+        botonEnviar.disabled = false;
+        botonEnviar.value = "Enviar";
+    }
+};
+
+formulario.addEventListener("submit", enviarFormulario);

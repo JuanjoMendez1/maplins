@@ -5,54 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/Logo/favicon-logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Logo/favicon-logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css?v=5">
+    <link rel="stylesheet" href="css/estilos.css?v=6">
     <title>Maplins</title>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10952526812">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-10952526812');
-</script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6YM6WKG5E"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
-      gtag('config', 'G-D6YM6WKG5E');
-    </script>
-    <!-- Event snippet for Página vista conversion page -->
-    <script>
-        gtag('event', 'conversion', {
-            'send_to': 'AW-461391455/MbRpCOvSh-0BEN-MgdwB'
-        });
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16638905432"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'AW-16638905432');
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-235268245-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-235268245-1');
+      gtag('config', 'G-D6YM6WKG5E');
+      gtag('config', 'AW-10952526812');
+      gtag('config', 'AW-16638905432');
+      gtag('config', 'AW-461391455');
     </script>
 
     <!-- Microsoft Clarity -->
@@ -85,7 +54,7 @@
                             </a>
                         </div>
                         <div class="social-media">
-                            <a href="https://www.facebook.com/maplins.com.mx" target="_blank" class="social-social">
+                            <a href="https://www.facebook.com/maplins.com.mx" target="_blank" rel="noopener noreferrer" class="social-social">
                                 <i class="fab fa-facebook"></i>
                                 <p>Facebook</p>
                             </a>
@@ -118,7 +87,7 @@
                             <span>puntos estratégicos</span> de venta y unirte a un modelo de negocio en constante expansión.</p>
                     </div>
                     <div class="icono">
-                        <img src="img/icono_vintage.png" alt="">
+                        <img src="img/icono_vintage.png" alt="Modelo retro espacial de food truck">
                         <h4>Modelo retro espacial</h4>
                     </div>
                 </div>
@@ -130,7 +99,7 @@
                             gourmet.</p>
                     </div>
                     <div class="icono">
-                        <img src="img/icono-nosotros.png" alt="">
+                        <img src="img/icono-nosotros.png" alt="Diseño personalizado de un food truck Maplins">
                     </div>
                 </div>
                 <div class="sectionInformacions">
@@ -140,7 +109,7 @@
                             brindarte <span>comodidad</span>, <span>estilo</span> y un <span>rendimiento óptimo</span> en tus operaciones diarias.</p>
                     </div>
                     <div class="icono">
-                        <img src="img/icono-comprar.png" alt="">
+                        <img src="img/icono-comprar.png" alt="Modelo vintage de food truck">
                         <h4>Modelo vintage</h4>
                     </div>
                 </div>
@@ -170,36 +139,42 @@
             <div class="padd contenedor">
                 <div class="sectionContacto">
                     <div class="informacion">
-                        <h3 class="titulo_fuente">!Contactanos¡</h3>
-                        <h4>Solicita tu cotización o <a href="tel:5516772700">llamanos: (55) 1677 2700</a></h4>
+                        <h3 class="titulo_fuente">¡Contáctanos!</h3>
+                        <h4>Solicita tu cotización o <a href="tel:5516772700">llámanos: (55) 1677 2700</a></h4>
                     </div>
-                    <form action="#">
+                    <form action="formulario.php" method="post" id="formulario-contacto">
                         <div class="prueba">
                             <div class="inputForm">
                                 <label for="nombre">Nombre (s)</label>
                                 <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre(s)"
-                                    required>
+                                    autocomplete="given-name" maxlength="80" required>
                             </div>
                             <div class="inputForm">
-                                <label for="apellidos">Apellidos</label>
+                                <label for="apellido">Apellidos</label>
                                 <input type="text" id="apellido" name="apellido" placeholder="Escribe tus apellidos"
-                                    required>
+                                    autocomplete="family-name" maxlength="100" required>
                             </div>
                             <div class="inputForm">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+                                <input type="email" id="email" name="email" placeholder="Escribe tu email"
+                                    autocomplete="email" maxlength="254" required>
                             </div>
                             <div class="inputForm">
                                 <label for="telefono">Teléfono</label>
                                 <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono"
-                                    required>
+                                    autocomplete="tel" maxlength="30" required>
                             </div>
                         </div>
                         <div class="inputForm">
                             <label for="mensaje">Mensaje</label>
-                            <textarea name="mensaje" id="mensaje" rows="10"></textarea>
+                            <textarea name="mensaje" id="mensaje" rows="10" maxlength="2000" required></textarea>
+                        </div>
+                        <div class="campo-trampa" aria-hidden="true">
+                            <label for="sitio_web">Deja este campo vacío</label>
+                            <input type="text" id="sitio_web" name="sitio_web" tabindex="-1" autocomplete="off">
                         </div>
                         <input class="btn-contacto" type="submit" id="btn_enviar" value="Enviar">
+                        <p id="estado-formulario" class="estado-formulario" role="status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
@@ -241,7 +216,7 @@
                         </a>
                     </div>
                     <div class="social-media">
-                        <a href="https://www.facebook.com/maplins.com.mx" target="_blank" class="social-social">
+                        <a href="https://www.facebook.com/maplins.com.mx" target="_blank" rel="noopener noreferrer" class="social-social">
                             <i class="fab fa-facebook"></i>
                             <p>Facebook</p>
                         </a>
@@ -249,12 +224,12 @@
                 </div>
             </div>
             <div>
-                <p>Derechos Reservados 2022 &copy; | Maplins</p>
+                <p>Derechos Reservados <span id="anio-actual">2026</span> &copy; | Maplins</p>
             </div>
         </div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="js/script.js?v=2"></script>
 </body>
 
 </html>
